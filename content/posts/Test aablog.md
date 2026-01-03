@@ -15,7 +15,7 @@ This post exists to test **Markdown rendering**, code blocks, images, and layout
 If this renders correctly, the blog setup is good ✅
 
 ---
-!![Image Description](/images/Pasted%20image%2020260103074524.png)
+![[Pasted image 20260103074524.png]]
 ## Headings
 
 ### H3 Heading
@@ -42,7 +42,7 @@ If this renders correctly, the blog setup is good ✅
 - Networking
 - Cybersecurity
   - SOC
-  - !![Image Description](/images/Pasted%20image%2020260103074538.png)
+  - ![[Pasted image 20260103074538.png]]
   - SIEM
   - IR
 
