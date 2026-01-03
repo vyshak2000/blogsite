@@ -2,7 +2,7 @@
 # Core Hugo Settings
 ########################
 
-baseURL = "https://blog.vyshak.in/"
+baseURL = "https://aa.vyshak.in/"
 languageCode = "en-us"
 title = "Vyshak Haridasan"
 theme = "PaperMod"
