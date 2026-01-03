@@ -1,0 +1,165 @@
+########################
+# Core Hugo Settings
+########################
+
+baseURL = "https://vyshak.in/"
+languageCode = "en-us"
+title = "Vyshak Haridasan"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+
+
+########################
+# Site Parameters
+########################
+
+[params]
+env = "production"
+author = "Vyshak Haridasan"
+description = "SOC Analyst | Cybersecurity | Blue Team | Tech Blog"
+
+defaultTheme = "auto"              # light | dark | auto
+disableThemeToggle = false
+
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+
+UseHugoToc = true
+disableScrollToTop = false
+
+
+########################
+# Home Page (Profile Mode)
+########################
+
+[params.profileMode]
+enabled = true
+title = "Vyshak Haridasan"
+subtitle = "SOC Analyst • Cybersecurity • Tech Writer"
+
+
+[[params.profileMode.buttons]]
+name = "Blog"
+url = "/posts/"
+
+[[params.profileMode.buttons]]
+name = "About"
+url = "https://vyshak.in/"
+
+[[params.profileMode.buttons]]
+name = "GitHub"
+url = "https://github.com/vyshak2000/"
+
+
+########################
+# Navigation Menu
+########################
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 20
+
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 30
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 40
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "https://vyshak.in/"
+weight = 50
+
+
+########################
+# Social Icons
+########################
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/vyshak2000/"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/vyshak-haridasan/"
+
+[[params.socialIcons]]
+name = "medium"
+url = "https://medium.com/@vyshak-hari"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:contact@vyshak.in"
+
+
+########################
+# Search (PaperMod)
+########################
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+
+########################
+# Markdown & Syntax Highlighting
+########################
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"
+
+
+########################
+# Taxonomies
+########################
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+
+########################
+# Assets & Branding
+########################
+
+[params.assets]
+favicon = "/favicon.ico"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+apple_touch_icon = "/apple-touch-icon.png"
+
+[params.label]
+text = "Vyshak"
+icon = "/images/logo.png"
+iconHeight = 35
