@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://vyshak.in/sitemap.xml
+Sitemap: https://blog.vyshak.in/sitemap.xml
