@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aa.vyshak.in/categories/</loc>
+    <loc>https://blog.vyshak.in/categories/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/tags/hugo/</loc>
+    <loc>https://blog.vyshak.in/tags/hugo/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/tags/markdown/</loc>
+    <loc>https://blog.vyshak.in/tags/markdown/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/posts/test-aablog/</loc>
+    <loc>https://blog.vyshak.in/posts/test-aablog/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/posts/</loc>
+    <loc>https://blog.vyshak.in/posts/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/categories/setup/</loc>
+    <loc>https://blog.vyshak.in/categories/setup/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/tags/</loc>
+    <loc>https://blog.vyshak.in/tags/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/tags/test/</loc>
+    <loc>https://blog.vyshak.in/tags/test/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/</loc>
+    <loc>https://blog.vyshak.in/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aa.vyshak.in/posts/blog/</loc>
+    <loc>https://blog.vyshak.in/posts/blog/</loc>
   </url><url>
-    <loc>https://aa.vyshak.in/series/</loc>
+    <loc>https://blog.vyshak.in/series/</loc>
   </url>
 </urlset>

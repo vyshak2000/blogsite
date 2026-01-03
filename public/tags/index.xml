@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Vyshak Haridasan</title>
-    <link>https://aa.vyshak.in/tags/</link>
+    <link>https://blog.vyshak.in/tags/</link>
     <description>Recent content in Tags on Vyshak Haridasan</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://aa.vyshak.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vyshak.in/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>https://aa.vyshak.in/tags/hugo/</link>
+      <link>https://blog.vyshak.in/tags/hugo/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://aa.vyshak.in/tags/hugo/</guid>
+      <guid>https://blog.vyshak.in/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>https://aa.vyshak.in/tags/markdown/</link>
+      <link>https://blog.vyshak.in/tags/markdown/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://aa.vyshak.in/tags/markdown/</guid>
+      <guid>https://blog.vyshak.in/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Test</title>
-      <link>https://aa.vyshak.in/tags/test/</link>
+      <link>https://blog.vyshak.in/tags/test/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://aa.vyshak.in/tags/test/</guid>
+      <guid>https://blog.vyshak.in/tags/test/</guid>
       <description></description>
     </item>
   </channel>
