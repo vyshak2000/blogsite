@@ -3,33 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.vyshak.in/categories/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.vyshak.in/tags/hugo/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <loc>https://blog.vyshak.in/categories/cve/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.vyshak.in/tags/markdown/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <loc>https://blog.vyshak.in/tags/cve-2025-55182/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.vyshak.in/posts/test-aablog/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <loc>https://blog.vyshak.in/posts/react2shell/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/insecure_deserialization/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/posts/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.vyshak.in/categories/setup/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <loc>https://blog.vyshak.in/tags/rce/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/react2shell/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/tags/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.vyshak.in/tags/test/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <loc>https://blog.vyshak.in/tags/tryhackme/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.vyshak.in/posts/blog/</loc>
+    <loc>https://blog.vyshak.in/posts/search/</loc>
   </url><url>
     <loc>https://blog.vyshak.in/search/</loc>
   </url><url>

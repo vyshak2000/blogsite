@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Vyshak Haridasan</title>
-    <link>https://blog.vyshak.in/posts/</link>
-    <description>Recent content in Posts on Vyshak Haridasan</description>
+    <title>React2Shell on Vyshak Haridasan</title>
+    <link>https://blog.vyshak.in/tags/react2shell/</link>
+    <description>Recent content in React2Shell on Vyshak Haridasan</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.vyshak.in/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vyshak.in/tags/react2shell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How One HTTP Request Can Compromise Your Next.js App — React2Shell Breakdown</title>
       <link>https://blog.vyshak.in/posts/react2shell/</link>
