@@ -2,45 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Vyshak Haridasan</title>
-    <link>https://blog.vyshak.in/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Vyshak Haridasan</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.vyshak.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyber-Warfare</title>
+      <link>http://localhost:1313/tags/cyber-warfare/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cyber-warfare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geopolitics</title>
+      <link>http://localhost:1313/tags/geopolitics/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/geopolitics/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CVE-2025-55182</title>
-      <link>https://blog.vyshak.in/tags/cve-2025-55182/</link>
+      <link>http://localhost:1313/tags/cve-2025-55182/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.vyshak.in/tags/cve-2025-55182/</guid>
+      <guid>http://localhost:1313/tags/cve-2025-55182/</guid>
       <description></description>
     </item>
     <item>
       <title>Insecure_Deserialization</title>
-      <link>https://blog.vyshak.in/tags/insecure_deserialization/</link>
+      <link>http://localhost:1313/tags/insecure_deserialization/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.vyshak.in/tags/insecure_deserialization/</guid>
+      <guid>http://localhost:1313/tags/insecure_deserialization/</guid>
       <description></description>
     </item>
     <item>
       <title>RCE</title>
-      <link>https://blog.vyshak.in/tags/rce/</link>
+      <link>http://localhost:1313/tags/rce/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.vyshak.in/tags/rce/</guid>
+      <guid>http://localhost:1313/tags/rce/</guid>
       <description></description>
     </item>
     <item>
       <title>React2Shell</title>
-      <link>https://blog.vyshak.in/tags/react2shell/</link>
+      <link>http://localhost:1313/tags/react2shell/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.vyshak.in/tags/react2shell/</guid>
+      <guid>http://localhost:1313/tags/react2shell/</guid>
       <description></description>
     </item>
     <item>
       <title>TryHackMe</title>
-      <link>https://blog.vyshak.in/tags/tryhackme/</link>
+      <link>http://localhost:1313/tags/tryhackme/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.vyshak.in/tags/tryhackme/</guid>
+      <guid>http://localhost:1313/tags/tryhackme/</guid>
       <description></description>
     </item>
   </channel>
