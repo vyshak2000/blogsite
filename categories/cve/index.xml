@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CVE on Vyshak Haridasan</title>
-    <link>http://localhost:1313/categories/cve/</link>
+    <link>https://blog.vyshak.in/categories/cve/</link>
     <description>Recent content in CVE on Vyshak Haridasan</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/cve/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vyshak.in/categories/cve/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How One HTTP Request Can Compromise Your Next.js App — React2Shell Breakdown</title>
-      <link>http://localhost:1313/posts/react2shell/</link>
+      <link>https://blog.vyshak.in/posts/react2shell/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/react2shell/</guid>
+      <guid>https://blog.vyshak.in/posts/react2shell/</guid>
       <description>This blog breaks down how the React2Shell vulnerability (CVE-2025-55182) abuses insecure deserialization in React Server Components’ Flight protocol to achieve pre-authentication remote code execution, and provides detection, mitigation, and threat-hunting guidance for defenders.</description>
     </item>
   </channel>

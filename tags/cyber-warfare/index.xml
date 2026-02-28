@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cyber-Warfare on Vyshak Haridasan</title>
-    <link>http://localhost:1313/tags/cyber-warfare/</link>
+    <link>https://blog.vyshak.in/tags/cyber-warfare/</link>
     <description>Recent content in Cyber-Warfare on Vyshak Haridasan</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cyber-warfare/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vyshak.in/tags/cyber-warfare/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cyber Frontlines - How the Iran War Is Reshaping Global Cybersecurity</title>
-      <link>http://localhost:1313/posts/iran/</link>
+      <link>https://blog.vyshak.in/posts/iran/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/iran/</guid>
+      <guid>https://blog.vyshak.in/posts/iran/</guid>
       <description>Recent escalations in the Iran war have turned cyberspace into a pivotal battlefield, with Israel&amp;rsquo;s massive cyberattack on February 28, 2026, marking a historic shift. This operation, dubbed part of Operation Roar of the Lion, combined airstrikes with digital strikes that crippled Iran&amp;rsquo;s infrastructure.</description>
     </item>
   </channel>
