@@ -18,9 +18,9 @@ As military strikes began, independent internet-monitoring organizations reporte
 
 Connectivity dropped so dramatically that most external and internal communication systems became unreachable. Platforms such as mobile data, fixed broadband, and even some elements of the semi-isolated “National Information Network” (Iran’s internal digital ecosystem) were disrupted.
 
-![[Pasted image 20260301013132.png]]
+!![Image Description](/images/Pasted%20image%2020260301013132.png)
 
-![[Pasted image 20260301013346.png]]
+!![Image Description](/images/Pasted%20image%2020260301013346.png)
 
 A blackout at this scale doesn’t just interrupt social media or entertainment — it **cripples banking systems, cloud services, e-commerce, logistics, and real-time communication**, with ripple effects across the economy and society.
 
