@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>TryHackMe on Vyshak Haridasan</title>
-    <link>https://blog.vyshak.in/tags/tryhackme/</link>
-    <description>Recent content in TryHackMe on Vyshak Haridasan</description>
+    <title>Linux on Vyshak Haridasan</title>
+    <link>https://blog.vyshak.in/tags/linux/</link>
+    <description>Recent content in Linux on Vyshak Haridasan</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.vyshak.in/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vyshak.in/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CopyFail (CVE-2026-31431): The Linux Privilege Escalation Flaw You Can&#39;t Ignore</title>
       <link>https://blog.vyshak.in/posts/copyfail/</link>
       <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
       <guid>https://blog.vyshak.in/posts/copyfail/</guid>
       <description>CopyFail (CVE-2026-31431) is a Linux kernel privilege escalation vulnerability that lets an unprivileged user exploit the AF_ALG Crypto API to write 4 bytes into the page cache of any readable file, enabling them to corrupt executable code in memory and gain root access when a privileged process runs the tampered file. It affects virtually every Linux distribution shipped since 2017, is already being actively exploited in the wild, and the US government has ordered federal agencies to patch by May 15.</description>
-    </item>
-    <item>
-      <title>How One HTTP Request Can Compromise Your Next.js App — React2Shell Breakdown</title>
-      <link>https://blog.vyshak.in/posts/react2shell/</link>
-      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.vyshak.in/posts/react2shell/</guid>
-      <description>This blog breaks down how the React2Shell vulnerability (CVE-2025-55182) abuses insecure deserialization in React Server Components’ Flight protocol to achieve pre-authentication remote code execution, and provides detection, mitigation, and threat-hunting guidance for defenders.</description>
     </item>
   </channel>
 </rss>

@@ -3,7 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.vyshak.in/categories/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/posts/copyfail/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/categories/cve/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/cve-2026-31431/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/linux/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/memory_corruption/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/posts/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/privilege_escalation/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/tryhackme/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/posts/iran/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
@@ -16,18 +46,6 @@
   </url><url>
     <loc>https://blog.vyshak.in/categories/news/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/posts/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/tags/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/categories/cve/</loc>
-    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/tags/cve-2025-55182/</loc>
     <lastmod>2026-01-09T00:00:00+00:00</lastmod>
@@ -42,9 +60,6 @@
     <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/tags/react2shell/</loc>
-    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/tags/tryhackme/</loc>
     <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/posts/search/</loc>
