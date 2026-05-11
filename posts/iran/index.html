@@ -222,7 +222,20 @@
     <h1 class="post-title entry-hint-parent">
       Cyber Frontlines - How the Iran War Is Reshaping Global Cybersecurity
     </h1>
-    <div class="post-meta"><span title='2026-02-28 00:00:00 +0000 UTC'>February 28, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>349 words</span>&nbsp;·&nbsp;<span>Vyshak Haridasan</span>
+    <div class="post-meta"><span title='2026-02-28 00:00:00 +0000 UTC'>February 28, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>349 words</span>&nbsp;·&nbsp;<span>Vyshak Haridasan</span><span id="gc-views">👀 -- views</span>
+
+<script>
+fetch("https://vyshak.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("gc-views").innerText =
+      "👀 " + data.count + " views";
+  })
+  .catch(() => {
+    document.getElementById("gc-views").innerText =
+      "👀 views unavailable";
+  });
+</script>
 
 </div>
   </header> 

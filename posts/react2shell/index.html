@@ -225,7 +225,20 @@
     <h1 class="post-title entry-hint-parent">
       How One HTTP Request Can Compromise Your Next.js App — React2Shell Breakdown
     </h1>
-    <div class="post-meta"><span title='2026-01-09 00:00:00 +0000 UTC'>January 9, 2026</span>&nbsp;·&nbsp;<span>15 min</span>&nbsp;·&nbsp;<span>3068 words</span>&nbsp;·&nbsp;<span>Vyshak Haridasan</span>
+    <div class="post-meta"><span title='2026-01-09 00:00:00 +0000 UTC'>January 9, 2026</span>&nbsp;·&nbsp;<span>15 min</span>&nbsp;·&nbsp;<span>3068 words</span>&nbsp;·&nbsp;<span>Vyshak Haridasan</span><span id="gc-views">👀 -- views</span>
+
+<script>
+fetch("https://vyshak.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("gc-views").innerText =
+      "👀 " + data.count + " views";
+  })
+  .catch(() => {
+    document.getElementById("gc-views").innerText =
+      "👀 views unavailable";
+  });
+</script>
 
 </div>
   </header> 
