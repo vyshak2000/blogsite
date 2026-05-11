@@ -1,0 +1,14 @@
+<span id="gc-views">👀 -- views</span>
+
+<script>
+fetch("https://vyshak.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("gc-views").innerText =
+      "👀 " + data.count + " views";
+  })
+  .catch(() => {
+    document.getElementById("gc-views").innerText =
+      "👀 views unavailable";
+  });
+</script>

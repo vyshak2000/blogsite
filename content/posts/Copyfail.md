@@ -247,3 +247,5 @@ The kernels affected span from 4.14 through 6.18.21 in the 6.18 series and 6.1
 - [Exploit](https://github.com/painoob/Copy-Fail-Exploit-CVE-2026-31431)
 - [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-31431)
 - [# Modifying /usr/bin/su Without Writing to Disk - Copy Fail Explained - Jadi (Youtube)](https://www.youtube.com/watch?v=OftLQ1uPh4M)
+
+<p>👀 {{ partial "views.html" . }}</p>
