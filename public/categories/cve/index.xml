@@ -6,8 +6,15 @@
     <description>Recent content in CVE on Vyshak Haridasan</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.vyshak.in/categories/cve/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CopyFail (CVE-2026-31431): The Linux Privilege Escalation Flaw You Can&#39;t Ignore</title>
+      <link>https://blog.vyshak.in/posts/copyfail/</link>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.vyshak.in/posts/copyfail/</guid>
+      <description>CopyFail (CVE-2026-31431) is a Linux kernel privilege escalation vulnerability that lets an unprivileged user exploit the AF_ALG Crypto API to write 4 bytes into the page cache of any readable file, enabling them to corrupt executable code in memory and gain root access when a privileged process runs the tampered file. It affects virtually every Linux distribution shipped since 2017, is already being actively exploited in the wild, and the US government has ordered federal agencies to patch by May 15.</description>
+    </item>
     <item>
       <title>How One HTTP Request Can Compromise Your Next.js App — React2Shell Breakdown</title>
       <link>https://blog.vyshak.in/posts/react2shell/</link>
