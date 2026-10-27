@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams | Vyshak Haridasan</title>
+<meta name="keywords" content="Cyber-Warfare, Geopolitics">
+<meta name="description" content="October 2026 has been a relentless month for cybersecurity, with threat actors exploiting critical vulnerabilities, compromising software supply chains, launching ransomware attacks, and exposing sensitive data. From zero-day exploits and credential theft to breaches affecting major organizations, the month&rsquo;s events highlight how quickly the threat landscape continues to evolve. This roundup examines the most significant cyber incidents, security vulnerabilities, and emerging attack techniques reported throughout October, along with the lessons they offer defenders. For security teams, the challenge is no longer just responding to individual incidents, but staying ahead of an increasingly interconnected and fast-moving threat landscape.">
+<meta name="author" content="Vyshak Haridasan">
+<link rel="canonical" href="https://blog.vyshak.in/posts/hacktoberfest/">
+<link crossorigin="anonymous" href="https://blog.vyshak.in/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.vyshak.in/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.vyshak.in/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.vyshak.in/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.vyshak.in/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.vyshak.in/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.vyshak.in/posts/hacktoberfest/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M8JBGS6ZKT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M8JBGS6ZKT');
+</script><meta property="og:url" content="https://blog.vyshak.in/posts/hacktoberfest/">
+  <meta property="og:site_name" content="Vyshak Haridasan">
+  <meta property="og:title" content="Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams">
+  <meta property="og:description" content="October 2026 has been a relentless month for cybersecurity, with threat actors exploiting critical vulnerabilities, compromising software supply chains, launching ransomware attacks, and exposing sensitive data. From zero-day exploits and credential theft to breaches affecting major organizations, the month’s events highlight how quickly the threat landscape continues to evolve. This roundup examines the most significant cyber incidents, security vulnerabilities, and emerging attack techniques reported throughout October, along with the lessons they offer defenders. For security teams, the challenge is no longer just responding to individual incidents, but staying ahead of an increasingly interconnected and fast-moving threat landscape.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-10-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-10-27T00:00:00+00:00">
+    <meta property="article:tag" content="Cyber-Warfare">
+    <meta property="article:tag" content="Geopolitics">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams">
+<meta name="twitter:description" content="October 2026 has been a relentless month for cybersecurity, with threat actors exploiting critical vulnerabilities, compromising software supply chains, launching ransomware attacks, and exposing sensitive data. From zero-day exploits and credential theft to breaches affecting major organizations, the month&rsquo;s events highlight how quickly the threat landscape continues to evolve. This roundup examines the most significant cyber incidents, security vulnerabilities, and emerging attack techniques reported throughout October, along with the lessons they offer defenders. For security teams, the challenge is no longer just responding to individual incidents, but staying ahead of an increasingly interconnected and fast-moving threat landscape.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.vyshak.in/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams",
+      "item": "https://blog.vyshak.in/posts/hacktoberfest/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams",
+  "name": "Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams",
+  "description": "October 2026 has been a relentless month for cybersecurity, with threat actors exploiting critical vulnerabilities, compromising software supply chains, launching ransomware attacks, and exposing sensitive data. From zero-day exploits and credential theft to breaches affecting major organizations, the month\u0026rsquo;s events highlight how quickly the threat landscape continues to evolve. This roundup examines the most significant cyber incidents, security vulnerabilities, and emerging attack techniques reported throughout October, along with the lessons they offer defenders. For security teams, the challenge is no longer just responding to individual incidents, but staying ahead of an increasingly interconnected and fast-moving threat landscape.",
+  "keywords": [
+    "Cyber-Warfare", "Geopolitics"
+  ],
+  "articleBody": " October is recognised globally as Cybersecurity Awareness Month—a time dedicated to promoting safer digital habits, strengthening cyber defences, and reminding individuals and organisations that security is a shared responsibility.\nThroughout the month, security professionals encourage users to recognise phishing attempts, protect their credentials, enable multifactor authentication, and keep their systems updated. Organisations review their security posture, conduct awareness campaigns, and remind employees that cybersecurity begins with individual responsibility.\nYet October 2026 has delivered a rather uncomfortable reminder: awareness alone cannot stop a determined threat actor.\nAs the month progressed, a series of significant security incidents exposed weaknesses across the digital ecosystem. Critical vulnerabilities in widely deployed software raised the prospect of remote system compromise. Trusted software releases became vehicles for malware distribution. Digital certificate infrastructure faced a serious cryptographic security incident, while a major Indian bank reported the exposure of customer records.\nThe compromise of eMudhra’s intermediate certificate authority keys raised questions about the trust underpinning secure communications. State Bank of India reported that nearly 3,900 customer records had appeared on the dark web. The disclosure of the critical PHP2Shell vulnerabilities put internet-facing PHP servers at risk of remote code execution. Meanwhile, malicious releases of LiteLLM and OVHcloud CLI demonstrated how compromising a single trusted distribution channel can put developers, cloud credentials, and downstream infrastructure at risk.\nThese were not simply isolated technical problems. They represented different paths to the same outcome: attackers finding weaknesses in systems, identities, software dependencies, and trust relationships that organisations rely on every day.\nPerhaps no phrase captures the mood of the month better than Black October.\nIn a month dedicated to strengthening cybersecurity awareness, the volume and significance of reported incidents threatened to overshadow the message itself. For security teams, it became a reminder that awareness must be supported by effective patch management, strong access controls, continuous monitoring, and a tested incident response process.\nThis Month in Cybersecurity: October 2026 - a look at the incidents, vulnerabilities, and attack techniques that deserve the attention of every defender.\n1. PHP2Shell: Critical vulnerabilities put PHP servers at risk Date: October 21, 2026\nTwo critical vulnerabilities in PHP, tracked as CVE-2026-109618 and CVE-2026-109619, were disclosed on October 21. Collectively referred to as PHP2Shell, the flaws can potentially allow unauthenticated remote code execution on affected systems.\nBoth vulnerabilities received a CVSS v4.0 score of 9.2. They involve memory-handling weaknesses during request processing, creating opportunities for an attacker to execute code or access sensitive memory under vulnerable conditions.\nThe implications extend beyond a single application. PHP powers a substantial number of websites and web applications, including deployments using PHP-FPM and other common server configurations. A successful attack could provide a path to server compromise, persistence, and further access into an organisation’s environment.\nSecurity advisories from PHP and national cybersecurity agencies urged administrators to identify affected installations and apply the available security updates. Proof-of-concept activity and reports of exploitation attempts increased the urgency of remediation.\nWhat defenders should do:\nIdentify all PHP installations, including those bundled with hosting panels and third-party applications.\nUpgrade to the appropriate fixed PHP release.\nPrioritise internet-facing servers and investigate suspicious requests, unexpected processes, and modified web files.\nReview application and server logs for signs of exploitation or post-compromise activity.\nSources: PHP security advisories · CERT-In advisory\n2. eMudhra: A compromise of trust at the certificate level Date: October 21, 2026\nDigital certificates are fundamental to the security of the modern internet. They help browsers verify website identities, enable encrypted connections, and establish trust between systems.\nThat makes the reported compromise involving eMudhra’s intermediate certificate authority keys particularly significant.\nAccording to CERT-In’s advisory, affected private keys were generated with insufficient cryptographic randomness. The weakness meant the private keys could be recovered from their corresponding public keys, undermining the security guarantees that the certificates were intended to provide.\nA compromised certificate authority key can create opportunities for certificate impersonation and fraudulent certificates, depending on the affected certificate’s scope and the controls in place. It does not, by itself, establish that encrypted traffic was intercepted or that customer data was stolen.\nCERT-In clarified that the incident concerned eMudhra’s international website-certificate business and that its regulated Indian digital-signature and eSign services were not affected.\nThe incident demonstrates that cryptography is only as strong as its implementation. A trusted certificate, secure protocol, and correctly configured browser cannot compensate for a private key generated using inadequate randomness.\nWhat defenders should do:\nFollow vendor and browser-vendor guidance on affected certificates.\nUpdate relevant certificate trust stores and security products.\nCheck certificate chains used by public-facing services.\nMonitor for suspicious certificates and unexpected changes to TLS configurations.\nSource: CERT-In — Compromise of eMudhra Intermediate CA Certificates\n3. SBI reports exposure of nearly 3,900 customer records Date: October 21, 2026\nIndia’s financial sector also came under scrutiny when State Bank of India (SBI) reported a cyberattack involving customer records found on the dark web.\nAccording to Reuters, preliminary analysis identified 3,897 customer records containing personal information, including names, contact details, residential addresses, customer identifiers, and loan-related records.\nSBI engaged an independent cybersecurity agency to investigate the incident and determine its nature and scope. The bank also stated that customer account balances remained safe.\nAlthough the reported number of records was relatively limited compared with some major global breaches, the exposure of financial and personal information can still create meaningful risks. Threat actors may use such information to craft convincing phishing messages, impersonate legitimate banking representatives, or attempt social engineering against customers.\nThe incident also highlights the importance of distinguishing between the exposure of customer information and the compromise of core banking systems. These are different security outcomes and should not be conflated.\nWhat defenders should do:\nEstablish the source and scope of the exposed information.\nAssess whether credentials, authentication tokens, or other sensitive records were involved.\nMonitor for targeted phishing and impersonation attempts.\nCommunicate clearly with affected customers and relevant authorities.\nSource: Reuters — State Bank of India reports cyberattack involving customer records\n4. LiteLLM: A software supply-chain attack targets developer secrets Date: October 21, 2026\nThe compromise of LiteLLM demonstrated how a trusted software release can become an attacker’s distribution mechanism.\nLiteLLM is a Python-based tool used to connect applications with multiple large language model providers. On October 21, a compromised release, LiteLLM 1.107.0, was published to PyPI, alongside affected container images.\nAccording to LiteLLM’s incident report and subsequent security research, the compromised artifacts contained malicious code designed to collect credentials and other sensitive information. The package could execute malicious functionality through Python’s startup mechanisms, meaning an affected environment did not necessarily need to import LiteLLM directly for the payload to run.\nThe potential targets included developer credentials, cloud secrets, SSH material, environment variables, browser data, and other information accessible to the affected process.\nThis is particularly concerning because developers and CI/CD environments often have access to production infrastructure, deployment credentials, and source repositories. A compromise at the developer workstation or build pipeline can therefore become a route into much larger environments.\nThe incident also exposed the limitations of relying solely on package names, official registries, or trusted container repositories as indicators of safety.\nWhat defenders should do:\nCheck whether litellm==1.107.0 or affected container images were present during the exposure window.\nFollow the project’s incident guidance for determining whether an environment was compromised.\nRotate potentially exposed secrets from a clean environment.\nInvestigate unusual authentication, repository, and cloud activity.\nStrengthen release approval controls and protect privileged developer accounts.\nSources: LiteLLM’s official incident report · Microsoft Security Research · CERT-In advisory\n5. OVHcloud CLI: Compromised release binaries target developers Date: October 19, 2026\nAnother supply-chain incident affected the OVHcloud CLI, a command-line tool used to interact with OVHcloud services.\nOVHcloud’s investigation confirmed that a compromised developer account was used to replace previously published release binaries with malicious versions. The affected release assets were available for a limited period on October 19.\nThe incident affected downloads of versions 0.11.0 through 0.15.0 made during the identified exposure window. According to the vendor, the source code and build chain were not affected, and the malicious binaries were removed.\nFor developers, command-line tools can have access to API tokens, cloud resources, local configuration files, and other sensitive material. Running a compromised binary may therefore expose secrets that extend well beyond the tool itself.\nThe incident also highlights the importance of immutable release assets, signed releases, and independent verification of downloaded software.\nWhat defenders should do:\nDetermine whether affected binaries were downloaded and executed during the exposure window.\nFollow OVHcloud’s guidance to verify the affected artifacts without executing them.\nReplace compromised binaries with the clean release.\nRotate credentials accessible to an affected machine if the binary was executed.\nEnforce release immutability, signed artifacts, and stronger account protections.\nSource: OVHcloud CLI security advisory\n6. TeamUpdraft: A website compromise creates risks for connected WordPress sites Date: October 17–19, 2026\nTeamUpdraft disclosed unauthorised access to its website over the weekend of October 17–18. The company said it believed its customer database had been accessed, potentially exposing account information and connection keys used by its services.\nThe incident became especially significant because UpdraftCentral allows users to manage connected WordPress sites remotely. An attacker able to abuse a trusted management connection could potentially create unauthorised accounts or install malicious plugins on connected websites.\nTeamUpdraft reported revoking affected connection keys and releasing updates to disconnect older UpdraftCentral connections. It also advised customers to inspect their sites for unexpected users, unfamiliar plugins, and suspicious activity.\nThe broader lesson is that centralised management tools can amplify the consequences of a single compromised credential. A security failure affecting one management platform can have downstream consequences for multiple websites.\nWhat defenders should do:\nUpdate affected UpdraftPlus installations and follow TeamUpdraft’s instructions.\nInspect WordPress administrator accounts, plugins, and logs.\nRe-authorise connected services and rotate relevant credentials.\nConsider restoring compromised sites from known-good backups after investigating persistence.\nSource: TeamUpdraft’s official security incident report\n7. Rank Math PRO: Malware distributed through a trusted plugin Date: October 15–16, 2026\nThe Rank Math PRO incident offered another example of how software users can be exposed through legitimate distribution channels.\nRank Math confirmed that a limited number of users who downloaded version 3.0.123 during a specified period received plugin files containing malware. According to the vendor, activating the affected plugin could compromise a website.\nThe vendor removed the affected files and released a clean version, 3.0.124. It also clarified that the free Rank Math SEO plugin distributed through WordPress.org was not affected by this particular incident.\nFor website administrators, the incident illustrates why the reputation of a software vendor or plugin is not sufficient to guarantee that every release is safe.\nWhat defenders should do:\nVerify whether Rank Math PRO 3.0.123 was downloaded during the affected period.\nFollow the vendor’s cleanup and remediation guidance.\nCheck for unfamiliar administrator accounts, modified files, and persistence mechanisms.\nReview web server logs for suspicious activity following activation.\nSources: Rank Math’s official advisory · BleepingComputer’s reporting\n8. More than 300 Tor exit relays reportedly used to intercept SSH connections Reported: October 21, 2026\nA report concerning Tor exit relays highlighted the security risks of trusting an intercepted connection.\nAccording to reporting by The Hacker News, an investigation identified more than 300 Tor exit relays redirecting SSH connections to interception servers during an attack in early October.\nThe important distinction is that redirecting a connection does not automatically reveal SSH credentials. SSH host-key verification is designed to help clients detect when they are connecting to an unexpected server. The reported credential-theft risk applied where users accepted the interception server’s host key and proceeded with password authentication.\nThe incident is a reminder that encryption alone does not guarantee that a user is communicating with the intended endpoint. Authentication and verification remain essential parts of secure communication.\nWhat defenders should do:\nNever accept an unexpected SSH host-key change without investigation.\nVerify host keys using a trusted channel.\nInvestigate suspicious SSH sessions made through Tor during the reported exposure window.\nRotate potentially exposed passwords and revoke affected credentials.\nSource: The Hacker News — Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections\nWhat these incidents tell us about the threat landscape? Although these incidents affected different technologies and organisations, several recurring themes emerge.\nTrust has become a critical attack surface The LiteLLM and OVHcloud CLI incidents demonstrate how attackers can exploit trusted software distribution channels. TeamUpdraft and Rank Math PRO show similar risks in website management and plugin ecosystems.\nSecurity teams must therefore evaluate not only whether software comes from a recognised source, but also whether the release itself is authentic and whether the source account and publishing pipeline are adequately protected.\nVulnerability management must prioritise exposure, not just severity PHP2Shell illustrates the urgency of vulnerabilities that can enable unauthenticated remote code execution on internet-facing systems.\nA vulnerability’s severity score is important, but defenders should also consider whether affected services are exposed, whether exploit code is available, whether exploitation has been reported, and what privileges the vulnerable service possesses.\nCredential security is central to incident response Several of these incidents involved the potential exposure of developer, cloud, application, or management credentials.\nRotating a password or API key is not always enough. Organisations must identify the credentials that could have been exposed, revoke active sessions where appropriate, investigate suspicious activity, and assess whether attackers established persistence before access was removed.\nCryptographic trust requires correct implementation The eMudhra incident demonstrates that cryptographic algorithms and protocols cannot compensate for flawed key generation.\nCertificate management, key generation, certificate revocation, trust-store updates, and continuous monitoring all play a role in maintaining the security of digital communications.\nAwareness must lead to action Cybersecurity Awareness Month can help employees recognise threats, but awareness campaigns cannot replace patch management, identity controls, network segmentation, monitoring, and tested response procedures.\nThe goal is not simply to ensure that people know what phishing looks like. It is to build an environment in which a compromised account, vulnerable service, or malicious software release does not automatically become a major incident.\nConclusion: Black October is a warning, not just a headline October 2026 has provided a stark illustration of how cybersecurity incidents can unfold across multiple layers of the digital ecosystem.\nCritical vulnerabilities threatened exposed servers. Compromised software releases put developer credentials at risk. Certificate-key weaknesses challenged trust in digital identities. Reported customer-data exposure raised concerns about privacy, and attacks against management platforms demonstrated how a single compromise can affect downstream systems.\nFor defenders, the lesson is not that every system is inevitably vulnerable or that security awareness has failed. It is that awareness must be translated into measurable security controls and timely action.\nPatch vulnerable systems. Protect privileged identities. Verify software releases. Rotate exposed secrets. Monitor for signs of persistence. Test incident response procedures before an emergency demands them.\nCybersecurity Awareness Month reminds us to pay attention to the threats around us. Black October reminds us why that attention must be followed by action.\nThe month is not over yet, and neither is the work of defending the systems we depend on.\nStay vigilant. Verify before you trust. Patch before attackers exploit.\nDisclaimer: This article is an informational roundup based on publicly available reporting and advisories as of October 27, 2026. Incident investigations may evolve, and the inclusion of an incident does not imply that every potential impact described has been confirmed. Consult the linked primary sources for current remediation guidance.\n",
+  "wordCount" : "2555",
+  "inLanguage": "en",
+  "datePublished": "2026-10-27T00:00:00Z",
+  "dateModified": "2026-10-27T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Vyshak Haridasan"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.vyshak.in/posts/hacktoberfest/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vyshak Haridasan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.vyshak.in/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.vyshak.in/" accesskey="h" title="Vyshak (Alt + H)">
+                <img src="https://blog.vyshak.in/images/logo.png" alt="" aria-label="logo"
+                    height="35">Vyshak</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.vyshak.in/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.vyshak.in/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.vyshak.in/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.vyshak.in/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://vyshak.in/" title="About">
+                    <span>About</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.vyshak.in/">Home</a>&nbsp;»&nbsp;<a href="https://blog.vyshak.in/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams
+    </h1>
+    <div class="post-meta"><span title='2026-10-27 00:00:00 +0000 UTC'>October 27, 2026</span>&nbsp;·&nbsp;<span>12 min</span>&nbsp;·&nbsp;<span>2555 words</span>&nbsp;·&nbsp;<span>Vyshak Haridasan</span><span id="gc-views">👀 -- views</span>
+
+<script>
+fetch("https://vyshak.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("gc-views").innerText =
+      "👀 " + data.count + " views";
+  })
+  .catch(() => {
+    document.getElementById("gc-views").innerText =
+      "👀 views unavailable";
+  });
+</script>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<p>October is recognised globally as <strong>Cybersecurity Awareness Month</strong>—a time dedicated to promoting safer digital habits, strengthening cyber defences, and reminding individuals and organisations that security is a shared responsibility.</p>
+<p>Throughout the month, security professionals encourage users to recognise phishing attempts, protect their credentials, enable multifactor authentication, and keep their systems updated. Organisations review their security posture, conduct awareness campaigns, and remind employees that cybersecurity begins with individual responsibility.</p>
+<p>Yet October 2026 has delivered a rather uncomfortable reminder: <strong>awareness alone cannot stop a determined threat actor.</strong></p>
+<p>As the month progressed, a series of significant security incidents exposed weaknesses across the digital ecosystem. Critical vulnerabilities in widely deployed software raised the prospect of remote system compromise. Trusted software releases became vehicles for malware distribution. Digital certificate infrastructure faced a serious cryptographic security incident, while a major Indian bank reported the exposure of customer records.</p>
+<p>The compromise of eMudhra&rsquo;s intermediate certificate authority keys raised questions about the trust underpinning secure communications. State Bank of India reported that nearly 3,900 customer records had appeared on the dark web. The disclosure of the critical PHP2Shell vulnerabilities put internet-facing PHP servers at risk of remote code execution. Meanwhile, malicious releases of LiteLLM and OVHcloud CLI demonstrated how compromising a single trusted distribution channel can put developers, cloud credentials, and downstream infrastructure at risk.</p>
+<p>These were not simply isolated technical problems. They represented different paths to the same outcome: attackers finding weaknesses in systems, identities, software dependencies, and trust relationships that organisations rely on every day.</p>
+<p>Perhaps no phrase captures the mood of the month better than <strong>Black October</strong>.</p>
+<p>In a month dedicated to strengthening cybersecurity awareness, the volume and significance of reported incidents threatened to overshadow the message itself. For security teams, it became a reminder that awareness must be supported by effective patch management, strong access controls, continuous monitoring, and a tested incident response process.</p>
+<p>This Month in Cybersecurity: October 2026 - a look at the incidents, vulnerabilities, and attack techniques that deserve the attention of every defender.</p>
+<hr>
+<h2 id="1-php2shell-critical-vulnerabilities-put-php-servers-at-risk">1. PHP2Shell: Critical vulnerabilities put PHP servers at risk<a hidden class="anchor" aria-hidden="true" href="#1-php2shell-critical-vulnerabilities-put-php-servers-at-risk">#</a></h2>
+<p><strong>Date: October 21, 2026</strong></p>
+<p>Two critical vulnerabilities in PHP, tracked as <strong>CVE-2026-109618 and CVE-2026-109619</strong>, were disclosed on October 21. Collectively referred to as PHP2Shell, the flaws can potentially allow unauthenticated remote code execution on affected systems.</p>
+<p>Both vulnerabilities received a CVSS v4.0 score of 9.2. They involve memory-handling weaknesses during request processing, creating opportunities for an attacker to execute code or access sensitive memory under vulnerable conditions.</p>
+<p>The implications extend beyond a single application. PHP powers a substantial number of websites and web applications, including deployments using PHP-FPM and other common server configurations. A successful attack could provide a path to server compromise, persistence, and further access into an organisation&rsquo;s environment.</p>
+<p>Security advisories from PHP and national cybersecurity agencies urged administrators to identify affected installations and apply the available security updates. Proof-of-concept activity and reports of exploitation attempts increased the urgency of remediation.</p>
+<p><strong>What defenders should do:</strong></p>
+<ul>
+<li>
+<p>Identify all PHP installations, including those bundled with hosting panels and third-party applications.</p>
+</li>
+<li>
+<p>Upgrade to the appropriate fixed PHP release.</p>
+</li>
+<li>
+<p>Prioritise internet-facing servers and investigate suspicious requests, unexpected processes, and modified web files.</p>
+</li>
+<li>
+<p>Review application and server logs for signs of exploitation or post-compromise activity.</p>
+</li>
+</ul>
+<p>Sources: <a href="https://www.php.net/archive/2026.php#2026-10-21-5">PHP security advisories</a> · <a href="https://www.cert-in.org.in/s2cMainServlet?VLCODE=CIAD-2026-0052&amp;pageid=PUBVLNOTES02">CERT-In advisory</a></p>
+<h2 id="2-emudhra-a-compromise-of-trust-at-the-certificate-level">2. eMudhra: A compromise of trust at the certificate level<a hidden class="anchor" aria-hidden="true" href="#2-emudhra-a-compromise-of-trust-at-the-certificate-level">#</a></h2>
+<p><strong>Date: October 21, 2026</strong></p>
+<p>Digital certificates are fundamental to the security of the modern internet. They help browsers verify website identities, enable encrypted connections, and establish trust between systems.</p>
+<p>That makes the reported compromise involving <strong>eMudhra&rsquo;s intermediate certificate authority keys</strong> particularly significant.</p>
+<p>According to CERT-In&rsquo;s advisory, affected private keys were generated with insufficient cryptographic randomness. The weakness meant the private keys could be recovered from their corresponding public keys, undermining the security guarantees that the certificates were intended to provide.</p>
+<p>A compromised certificate authority key can create opportunities for certificate impersonation and fraudulent certificates, depending on the affected certificate&rsquo;s scope and the controls in place. It does not, by itself, establish that encrypted traffic was intercepted or that customer data was stolen.</p>
+<p>CERT-In clarified that the incident concerned eMudhra&rsquo;s international website-certificate business and that its regulated Indian digital-signature and eSign services were not affected.</p>
+<p>The incident demonstrates that cryptography is only as strong as its implementation. A trusted certificate, secure protocol, and correctly configured browser cannot compensate for a private key generated using inadequate randomness.</p>
+<p><strong>What defenders should do:</strong></p>
+<ul>
+<li>
+<p>Follow vendor and browser-vendor guidance on affected certificates.</p>
+</li>
+<li>
+<p>Update relevant certificate trust stores and security products.</p>
+</li>
+<li>
+<p>Check certificate chains used by public-facing services.</p>
+</li>
+<li>
+<p>Monitor for suspicious certificates and unexpected changes to TLS configurations.</p>
+</li>
+</ul>
+<p>Source: <a href="https://www.cert-in.org.in/s2cMainServlet?CACODE=CICA-2026-3649&amp;pageid=PUBADV01">CERT-In — Compromise of eMudhra Intermediate CA Certificates</a></p>
+<h2 id="3-sbi-reports-exposure-of-nearly-3900-customer-records">3. SBI reports exposure of nearly 3,900 customer records<a hidden class="anchor" aria-hidden="true" href="#3-sbi-reports-exposure-of-nearly-3900-customer-records">#</a></h2>
+<p><strong>Date: October 21, 2026</strong></p>
+<p>India&rsquo;s financial sector also came under scrutiny when <strong>State Bank of India (SBI)</strong> reported a cyberattack involving customer records found on the dark web.</p>
+<p>According to Reuters, preliminary analysis identified 3,897 customer records containing personal information, including names, contact details, residential addresses, customer identifiers, and loan-related records.</p>
+<p>SBI engaged an independent cybersecurity agency to investigate the incident and determine its nature and scope. The bank also stated that customer account balances remained safe.</p>
+<p>Although the reported number of records was relatively limited compared with some major global breaches, the exposure of financial and personal information can still create meaningful risks. Threat actors may use such information to craft convincing phishing messages, impersonate legitimate banking representatives, or attempt social engineering against customers.</p>
+<p>The incident also highlights the importance of distinguishing between the exposure of customer information and the compromise of core banking systems. These are different security outcomes and should not be conflated.</p>
+<p><strong>What defenders should do:</strong></p>
+<ul>
+<li>
+<p>Establish the source and scope of the exposed information.</p>
+</li>
+<li>
+<p>Assess whether credentials, authentication tokens, or other sensitive records were involved.</p>
+</li>
+<li>
+<p>Monitor for targeted phishing and impersonation attempts.</p>
+</li>
+<li>
+<p>Communicate clearly with affected customers and relevant authorities.</p>
+</li>
+</ul>
+<p>Source: <a href="https://www.reuters.com/legal/litigation/state-bank-india-reports-cyberattack-involving-customer-records-2026-10-21/">Reuters — State Bank of India reports cyberattack involving customer records</a></p>
+<h2 id="4-litellm-a-software-supply-chain-attack-targets-developer-secrets">4. LiteLLM: A software supply-chain attack targets developer secrets<a hidden class="anchor" aria-hidden="true" href="#4-litellm-a-software-supply-chain-attack-targets-developer-secrets">#</a></h2>
+<p><strong>Date: October 21, 2026</strong></p>
+<p>The compromise of LiteLLM demonstrated how a trusted software release can become an attacker&rsquo;s distribution mechanism.</p>
+<p>LiteLLM is a Python-based tool used to connect applications with multiple large language model providers. On October 21, a compromised release, <strong>LiteLLM 1.107.0</strong>, was published to PyPI, alongside affected container images.</p>
+<p>According to LiteLLM&rsquo;s incident report and subsequent security research, the compromised artifacts contained malicious code designed to collect credentials and other sensitive information. The package could execute malicious functionality through Python&rsquo;s startup mechanisms, meaning an affected environment did not necessarily need to import LiteLLM directly for the payload to run.</p>
+<p>The potential targets included developer credentials, cloud secrets, SSH material, environment variables, browser data, and other information accessible to the affected process.</p>
+<p>This is particularly concerning because developers and CI/CD environments often have access to production infrastructure, deployment credentials, and source repositories. A compromise at the developer workstation or build pipeline can therefore become a route into much larger environments.</p>
+<p>The incident also exposed the limitations of relying solely on package names, official registries, or trusted container repositories as indicators of safety.</p>
+<p><strong>What defenders should do:</strong></p>
+<ul>
+<li>
+<p>Check whether <code>litellm==1.107.0</code> or affected container images were present during the exposure window.</p>
+</li>
+<li>
+<p>Follow the project&rsquo;s incident guidance for determining whether an environment was compromised.</p>
+</li>
+<li>
+<p>Rotate potentially exposed secrets from a clean environment.</p>
+</li>
+<li>
+<p>Investigate unusual authentication, repository, and cloud activity.</p>
+</li>
+<li>
+<p>Strengthen release approval controls and protect privileged developer accounts.</p>
+</li>
+</ul>
+<p>Sources: <a href="https://docs.litellm.ai/blog/security-incident-oct-21-2026">LiteLLM&rsquo;s official incident report</a> · <a href="https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/">Microsoft Security Research</a> · <a href="https://www.cert-in.org.in/s2cMainServlet?VLCODE=CIAD-2026-0053&amp;pageid=PUBVLNOTES02">CERT-In advisory</a></p>
+<h2 id="5-ovhcloud-cli-compromised-release-binaries-target-developers">5. OVHcloud CLI: Compromised release binaries target developers<a hidden class="anchor" aria-hidden="true" href="#5-ovhcloud-cli-compromised-release-binaries-target-developers">#</a></h2>
+<p><strong>Date: October 19, 2026</strong></p>
+<p>Another supply-chain incident affected the OVHcloud CLI, a command-line tool used to interact with OVHcloud services.</p>
+<p>OVHcloud&rsquo;s investigation confirmed that a compromised developer account was used to replace previously published release binaries with malicious versions. The affected release assets were available for a limited period on October 19.</p>
+<p>The incident affected downloads of versions 0.11.0 through 0.15.0 made during the identified exposure window. According to the vendor, the source code and build chain were not affected, and the malicious binaries were removed.</p>
+<p>For developers, command-line tools can have access to API tokens, cloud resources, local configuration files, and other sensitive material. Running a compromised binary may therefore expose secrets that extend well beyond the tool itself.</p>
+<p>The incident also highlights the importance of immutable release assets, signed releases, and independent verification of downloaded software.</p>
+<p><strong>What defenders should do:</strong></p>
+<ul>
+<li>
+<p>Determine whether affected binaries were downloaded and executed during the exposure window.</p>
+</li>
+<li>
+<p>Follow OVHcloud&rsquo;s guidance to verify the affected artifacts without executing them.</p>
+</li>
+<li>
+<p>Replace compromised binaries with the clean release.</p>
+</li>
+<li>
+<p>Rotate credentials accessible to an affected machine if the binary was executed.</p>
+</li>
+<li>
+<p>Enforce release immutability, signed artifacts, and stronger account protections.</p>
+</li>
+</ul>
+<p>Source: <a href="https://github.com/ovh/ovhcloud-cli/security/advisories/GHSA-862f-55f5-vmvw">OVHcloud CLI security advisory</a></p>
+<h2 id="6-teamupdraft-a-website-compromise-creates-risks-for-connected-wordpress-sites">6. TeamUpdraft: A website compromise creates risks for connected WordPress sites<a hidden class="anchor" aria-hidden="true" href="#6-teamupdraft-a-website-compromise-creates-risks-for-connected-wordpress-sites">#</a></h2>
+<p><strong>Date: October 17–19, 2026</strong></p>
+<p>TeamUpdraft disclosed unauthorised access to its website over the weekend of October 17–18. The company said it believed its customer database had been accessed, potentially exposing account information and connection keys used by its services.</p>
+<p>The incident became especially significant because UpdraftCentral allows users to manage connected WordPress sites remotely. An attacker able to abuse a trusted management connection could potentially create unauthorised accounts or install malicious plugins on connected websites.</p>
+<p>TeamUpdraft reported revoking affected connection keys and releasing updates to disconnect older UpdraftCentral connections. It also advised customers to inspect their sites for unexpected users, unfamiliar plugins, and suspicious activity.</p>
+<p>The broader lesson is that centralised management tools can amplify the consequences of a single compromised credential. A security failure affecting one management platform can have downstream consequences for multiple websites.</p>
+<p><strong>What defenders should do:</strong></p>
+<ul>
+<li>
+<p>Update affected UpdraftPlus installations and follow TeamUpdraft&rsquo;s instructions.</p>
+</li>
+<li>
+<p>Inspect WordPress administrator accounts, plugins, and logs.</p>
+</li>
+<li>
+<p>Re-authorise connected services and rotate relevant credentials.</p>
+</li>
+<li>
+<p>Consider restoring compromised sites from known-good backups after investigating persistence.</p>
+</li>
+</ul>
+<p>Source: <a href="https://teamupdraft.com/blog/security-incident-october-2026/">TeamUpdraft&rsquo;s official security incident report</a></p>
+<h2 id="7-rank-math-pro-malware-distributed-through-a-trusted-plugin">7. Rank Math PRO: Malware distributed through a trusted plugin<a hidden class="anchor" aria-hidden="true" href="#7-rank-math-pro-malware-distributed-through-a-trusted-plugin">#</a></h2>
+<p><strong>Date: October 15–16, 2026</strong></p>
+<p>The Rank Math PRO incident offered another example of how software users can be exposed through legitimate distribution channels.</p>
+<p>Rank Math confirmed that a limited number of users who downloaded version 3.0.123 during a specified period received plugin files containing malware. According to the vendor, activating the affected plugin could compromise a website.</p>
+<p>The vendor removed the affected files and released a clean version, 3.0.124. It also clarified that the free Rank Math SEO plugin distributed through WordPress.org was not affected by this particular incident.</p>
+<p>For website administrators, the incident illustrates why the reputation of a software vendor or plugin is not sufficient to guarantee that every release is safe.</p>
+<p><strong>What defenders should do:</strong></p>
+<ul>
+<li>
+<p>Verify whether Rank Math PRO 3.0.123 was downloaded during the affected period.</p>
+</li>
+<li>
+<p>Follow the vendor&rsquo;s cleanup and remediation guidance.</p>
+</li>
+<li>
+<p>Check for unfamiliar administrator accounts, modified files, and persistence mechanisms.</p>
+</li>
+<li>
+<p>Review web server logs for suspicious activity following activation.</p>
+</li>
+</ul>
+<p>Sources: <a href="https://rankmath.com/kb/pro-3-0-123-security-incident/">Rank Math&rsquo;s official advisory</a> · <a href="https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/">BleepingComputer&rsquo;s reporting</a></p>
+<h2 id="8-more-than-300-tor-exit-relays-reportedly-used-to-intercept-ssh-connections">8. More than 300 Tor exit relays reportedly used to intercept SSH connections<a hidden class="anchor" aria-hidden="true" href="#8-more-than-300-tor-exit-relays-reportedly-used-to-intercept-ssh-connections">#</a></h2>
+<p><strong>Reported: October 21, 2026</strong></p>
+<p>A report concerning Tor exit relays highlighted the security risks of trusting an intercepted connection.</p>
+<p>According to reporting by The Hacker News, an investigation identified more than 300 Tor exit relays redirecting SSH connections to interception servers during an attack in early October.</p>
+<p>The important distinction is that redirecting a connection does not automatically reveal SSH credentials. SSH host-key verification is designed to help clients detect when they are connecting to an unexpected server. The reported credential-theft risk applied where users accepted the interception server&rsquo;s host key and proceeded with password authentication.</p>
+<p>The incident is a reminder that encryption alone does not guarantee that a user is communicating with the intended endpoint. Authentication and verification remain essential parts of secure communication.</p>
+<p><strong>What defenders should do:</strong></p>
+<ul>
+<li>
+<p>Never accept an unexpected SSH host-key change without investigation.</p>
+</li>
+<li>
+<p>Verify host keys using a trusted channel.</p>
+</li>
+<li>
+<p>Investigate suspicious SSH sessions made through Tor during the reported exposure window.</p>
+</li>
+<li>
+<p>Rotate potentially exposed passwords and revoke affected credentials.</p>
+</li>
+</ul>
+<p>Source: <a href="https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html">The Hacker News — Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections</a></p>
+<hr>
+<h2 id="what-these-incidents-tell-us-about-the-threat-landscape">What these incidents tell us about the threat landscape?<a hidden class="anchor" aria-hidden="true" href="#what-these-incidents-tell-us-about-the-threat-landscape">#</a></h2>
+<p>Although these incidents affected different technologies and organisations, several recurring themes emerge.</p>
+<h3 id="trust-has-become-a-critical-attack-surface">Trust has become a critical attack surface<a hidden class="anchor" aria-hidden="true" href="#trust-has-become-a-critical-attack-surface">#</a></h3>
+<p>The LiteLLM and OVHcloud CLI incidents demonstrate how attackers can exploit trusted software distribution channels. TeamUpdraft and Rank Math PRO show similar risks in website management and plugin ecosystems.</p>
+<p>Security teams must therefore evaluate not only whether software comes from a recognised source, but also whether the release itself is authentic and whether the source account and publishing pipeline are adequately protected.</p>
+<h3 id="vulnerability-management-must-prioritise-exposure-not-just-severity">Vulnerability management must prioritise exposure, not just severity<a hidden class="anchor" aria-hidden="true" href="#vulnerability-management-must-prioritise-exposure-not-just-severity">#</a></h3>
+<p>PHP2Shell illustrates the urgency of vulnerabilities that can enable unauthenticated remote code execution on internet-facing systems.</p>
+<p>A vulnerability&rsquo;s severity score is important, but defenders should also consider whether affected services are exposed, whether exploit code is available, whether exploitation has been reported, and what privileges the vulnerable service possesses.</p>
+<h3 id="credential-security-is-central-to-incident-response">Credential security is central to incident response<a hidden class="anchor" aria-hidden="true" href="#credential-security-is-central-to-incident-response">#</a></h3>
+<p>Several of these incidents involved the potential exposure of developer, cloud, application, or management credentials.</p>
+<p>Rotating a password or API key is not always enough. Organisations must identify the credentials that could have been exposed, revoke active sessions where appropriate, investigate suspicious activity, and assess whether attackers established persistence before access was removed.</p>
+<h3 id="cryptographic-trust-requires-correct-implementation">Cryptographic trust requires correct implementation<a hidden class="anchor" aria-hidden="true" href="#cryptographic-trust-requires-correct-implementation">#</a></h3>
+<p>The eMudhra incident demonstrates that cryptographic algorithms and protocols cannot compensate for flawed key generation.</p>
+<p>Certificate management, key generation, certificate revocation, trust-store updates, and continuous monitoring all play a role in maintaining the security of digital communications.</p>
+<h3 id="awareness-must-lead-to-action">Awareness must lead to action<a hidden class="anchor" aria-hidden="true" href="#awareness-must-lead-to-action">#</a></h3>
+<p>Cybersecurity Awareness Month can help employees recognise threats, but awareness campaigns cannot replace patch management, identity controls, network segmentation, monitoring, and tested response procedures.</p>
+<p>The goal is not simply to ensure that people know what phishing looks like. It is to build an environment in which a compromised account, vulnerable service, or malicious software release does not automatically become a major incident.</p>
+<hr>
+<h2 id="conclusion-black-october-is-a-warning-not-just-a-headline">Conclusion: Black October is a warning, not just a headline<a hidden class="anchor" aria-hidden="true" href="#conclusion-black-october-is-a-warning-not-just-a-headline">#</a></h2>
+<p>October 2026 has provided a stark illustration of how cybersecurity incidents can unfold across multiple layers of the digital ecosystem.</p>
+<p>Critical vulnerabilities threatened exposed servers. Compromised software releases put developer credentials at risk. Certificate-key weaknesses challenged trust in digital identities. Reported customer-data exposure raised concerns about privacy, and attacks against management platforms demonstrated how a single compromise can affect downstream systems.</p>
+<p>For defenders, the lesson is not that every system is inevitably vulnerable or that security awareness has failed. It is that <strong>awareness must be translated into measurable security controls and timely action</strong>.</p>
+<p>Patch vulnerable systems. Protect privileged identities. Verify software releases. Rotate exposed secrets. Monitor for signs of persistence. Test incident response procedures before an emergency demands them.</p>
+<p>Cybersecurity Awareness Month reminds us to pay attention to the threats around us. Black October reminds us why that attention must be followed by action.</p>
+<p>The month is not over yet, and neither is the work of defending the systems we depend on.</p>
+<p><em>Stay vigilant. Verify before you trust. Patch before attackers exploit.</em></p>
+<hr>
+<p><em>Disclaimer: This article is an informational roundup based on publicly available reporting and advisories as of October 27, 2026. Incident investigations may evolve, and the inclusion of an incident does not imply that every potential impact described has been confirmed. Consult the linked primary sources for current remediation guidance.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.vyshak.in/tags/cyber-warfare/">Cyber-Warfare</a></li>
+      <li><a href="https://blog.vyshak.in/tags/geopolitics/">Geopolitics</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://blog.vyshak.in/posts/copyfail/">
+    <span class="title">Next »</span>
+    <br>
+    <span>CopyFail (CVE-2026-31431): The Linux Privilege Escalation Flaw You Can&#39;t Ignore</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams on x"
+            href="https://x.com/intent/tweet/?text=Hacktoberfest%202026%3a%20A%20Festival%20for%20Threat%20Actors%2c%20a%20Nightmare%20for%20Security%20Teams&amp;url=https%3a%2f%2fblog.vyshak.in%2fposts%2fhacktoberfest%2f&amp;hashtags=Cyber-Warfare%2cGeopolitics">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fblog.vyshak.in%2fposts%2fhacktoberfest%2f&amp;title=Hacktoberfest%202026%3a%20A%20Festival%20for%20Threat%20Actors%2c%20a%20Nightmare%20for%20Security%20Teams&amp;summary=Hacktoberfest%202026%3a%20A%20Festival%20for%20Threat%20Actors%2c%20a%20Nightmare%20for%20Security%20Teams&amp;source=https%3a%2f%2fblog.vyshak.in%2fposts%2fhacktoberfest%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fblog.vyshak.in%2fposts%2fhacktoberfest%2f&title=Hacktoberfest%202026%3a%20A%20Festival%20for%20Threat%20Actors%2c%20a%20Nightmare%20for%20Security%20Teams">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.vyshak.in%2fposts%2fhacktoberfest%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams on whatsapp"
+            href="https://api.whatsapp.com/send?text=Hacktoberfest%202026%3a%20A%20Festival%20for%20Threat%20Actors%2c%20a%20Nightmare%20for%20Security%20Teams%20-%20https%3a%2f%2fblog.vyshak.in%2fposts%2fhacktoberfest%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams on telegram"
+            href="https://telegram.me/share/url?text=Hacktoberfest%202026%3a%20A%20Festival%20for%20Threat%20Actors%2c%20a%20Nightmare%20for%20Security%20Teams&amp;url=https%3a%2f%2fblog.vyshak.in%2fposts%2fhacktoberfest%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Hacktoberfest%202026%3a%20A%20Festival%20for%20Threat%20Actors%2c%20a%20Nightmare%20for%20Security%20Teams&u=https%3a%2f%2fblog.vyshak.in%2fposts%2fhacktoberfest%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.vyshak.in/">Vyshak Haridasan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

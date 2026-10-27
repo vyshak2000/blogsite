@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.vyshak.in/categories/</loc>
-    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/cyber-warfare/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/geopolitics/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/posts/hacktoberfest/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/categories/news/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/posts/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/tags/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.vyshak.in/</loc>
+    <lastmod>2026-10-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/posts/copyfail/</loc>
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
@@ -20,31 +41,13 @@
     <loc>https://blog.vyshak.in/tags/memory_corruption/</loc>
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.vyshak.in/posts/</loc>
-    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.vyshak.in/tags/privilege_escalation/</loc>
-    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/tags/</loc>
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/tags/tryhackme/</loc>
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.vyshak.in/</loc>
-    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.vyshak.in/posts/iran/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/tags/cyber-warfare/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/tags/geopolitics/</loc>
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.vyshak.in/categories/news/</loc>
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.vyshak.in/tags/cve-2025-55182/</loc>

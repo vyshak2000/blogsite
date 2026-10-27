@@ -6,8 +6,15 @@
     <description>Recent content in Cyber-Warfare on Vyshak Haridasan</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.vyshak.in/tags/cyber-warfare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hacktoberfest 2026: A Festival for Threat Actors, a Nightmare for Security Teams</title>
+      <link>https://blog.vyshak.in/posts/hacktoberfest/</link>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.vyshak.in/posts/hacktoberfest/</guid>
+      <description>October 2026 has been a relentless month for cybersecurity, with threat actors exploiting critical vulnerabilities, compromising software supply chains, launching ransomware attacks, and exposing sensitive data. From zero-day exploits and credential theft to breaches affecting major organizations, the month&amp;rsquo;s events highlight how quickly the threat landscape continues to evolve. This roundup examines the most significant cyber incidents, security vulnerabilities, and emerging attack techniques reported throughout October, along with the lessons they offer defenders. For security teams, the challenge is no longer just responding to individual incidents, but staying ahead of an increasingly interconnected and fast-moving threat landscape.</description>
+    </item>
     <item>
       <title>Cyber Frontlines - How the Iran War Is Reshaping Global Cybersecurity</title>
       <link>https://blog.vyshak.in/posts/iran/</link>
