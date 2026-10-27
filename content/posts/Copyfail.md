@@ -144,7 +144,7 @@ Before the attacker can corrupt the page cache entry, that entry needs to exist.
 
 With the page cache now poisoned, the attacker simply **invokes the target binary**. In the proof-of-concept, the attacker themselves runs `/usr/bin/su` — which now executes the attacker's tampered in-memory version rather than the legitimate code. Since `su` is a setuid binary owned by root, it begins execution with root's effective UID. The injected code runs before any authentication logic, spawns a shell, and the attacker has a root shell.
 
-!![Image Description](/images/Pasted%20image%2020260511114823.png)
+![[Pasted image 20260511114823.png]]
 
 The script uses only Python standard library modules. The `os` module supplies `splice()` and `execve()`, `socket` provides the `AF_ALG` socket calls, and `zlib` is used for CRC calculations when building the authentication key blob. There are no pip packages and no compiled extensions. The script runs on any Python 3.10 or later installation. Ubuntu 24.04 ships Python 3.12, so `os.splice` is available out of the box.
 
@@ -248,4 +248,3 @@ The kernels affected span from 4.14 through 6.18.21 in the 6.18 series and 6.1
 - [NVD](https://nvd.nist.gov/vuln/detail/CVE-2026-31431)
 - [# Modifying /usr/bin/su Without Writing to Disk - Copy Fail Explained - Jadi (Youtube)](https://www.youtube.com/watch?v=OftLQ1uPh4M)
 
-<p>👀 {{ partial "views.html" . }}</p>

@@ -111,7 +111,7 @@ See the [update instructions](https://react.dev/blog/2025/12/03/critical-securit
 
 To exploit CVE-2025-55182, an attacker sends a crafted input to a web application running React Server Components functions in the form of a POST request. This input is then processed as a serialized object and passed to the backend server, where it is deserialized. Due to the default trust among the components, the attacker-provided input is then deserialized and the backend runs attacker-provided code under the NodeJS runtime.
 
-!![Image Description](/images/Pasted%20image%2020260109133545.png)
+![[Pasted image 20260109133545.png]]
 
 Post-exploitation, attackers were observed to run arbitrary commands, such as reverse shells to known Cobalt Strike servers. To achieve persistence, attackers added new malicious users, utilized remote monitoring and management (RMM) tools such as MeshAgent, modified _authorized_keys_ file, and enabled root login. To evade security defenses, the attackers downloaded from attacker-controlled CloudFlare Tunnel endpoints (for example, *_.trycloudflare.com_) and used [bind mounts](https://attack.mitre.org/techniques/T1564/013/) to hide malicious processes and artifacts from system monitoring tools.
 
@@ -461,3 +461,4 @@ The list below is non-exhaustive and does not represent all indicators of compro
 - [https://gist.github.com/maple3142/48bc9393f45e068cf8c90ab865c0f5f3#file-cve-2025-55182-http](https://gist.github.com/maple3142/48bc9393f45e068cf8c90ab865c0f5f3#file-cve-2025-55182-http)
 - [https://www.elastic.co/guide/en/security/current/react2shell-cve-2025-55182-exploitation-attempt.html](https://www.elastic.co/guide/en/security/current/react2shell-cve-2025-55182-exploitation-attempt.html)
 - [https://research.splunk.com/endpoint/cda04e9c-1950-43ab-87d6-e333a3d7f107/](https://research.splunk.com/endpoint/cda04e9c-1950-43ab-87d6-e333a3d7f107/)
+
